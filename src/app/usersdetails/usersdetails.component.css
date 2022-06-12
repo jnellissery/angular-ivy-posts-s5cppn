@@ -1,0 +1,38 @@
+.maindiv {
+  display: flex;
+  flex-direction: row;
+}
+.mainp {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  border: 1px solid;
+  height: 100px;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex: 33.33%;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 25%;
+  padding: 5px;
+  border: 1px solid;
+  margin: 10px;
+}
+.childdiv {
+  display: flex;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.column:hover {
+  background-color: cornflowerblue;
+  color: black;
+}
+
