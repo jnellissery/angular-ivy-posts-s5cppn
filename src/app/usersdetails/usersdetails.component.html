@@ -1,11 +1,18 @@
- 
-<h6 style='margin:auto;paddin-top:10px'>Posts</h6>
-<button style='float:right;border:5px' (click)='adduser()'>Add User</button>
+
+<div style="display: flex;
+flex-direction: column;
+max-width: 50%;
+margin: auto;">
+<div style='display:flex;    justify-content: space-between;
+align-items: center;'> 
+<h6 >Posts</h6>
+<button  (click)='adduser()'>Add User</button>
+</div>
 <div  class='row'>
 <ng-container *ngFor='let user of  users$|async'>
 <div class='column' (click)='selectuser(user.id)' >
-<div class='childdiv'>{{user.title}}</div>
+ {{user.title}} 
 </div>
 </ng-container>
-
+</div>
 </div>

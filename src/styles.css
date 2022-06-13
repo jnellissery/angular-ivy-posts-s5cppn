@@ -1,16 +1,16 @@
 :root {
-  --blue: rgb(33, 60, 114);
+  --blue: rgb(63, 99, 172);
   --white: #ffffff;
 }
 button {
   border-radius: 50px;
   border: 0;
   background-color: var(--blue);
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   color:var(--white)
 }
 h6 {
-  padding-top: 10px;
-  padding-left: 24px;
+  /* padding-top: 10px;
+  padding-left: 24px; */
 }
