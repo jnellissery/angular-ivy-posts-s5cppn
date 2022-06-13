@@ -3,11 +3,9 @@
 <button style='float:right;border:5px' (click)='adduser()'>Add User</button>
 <div  class='row'>
 <ng-container *ngFor='let user of  users$|async'>
-<!-- <p>{{user.id}}</p> -->
-<div class='column' style='margin:20px' (click)='selectuser(user.id)' >
+<div class='column' (click)='selectuser(user.id)' >
 <div class='childdiv'>{{user.title}}</div>
 </div>
 </ng-container>
-<!-- <p>{{user.body}}</p> -->
 
 </div>

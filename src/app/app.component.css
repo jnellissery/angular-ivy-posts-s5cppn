@@ -1,15 +1,7 @@
-p {
-  font-family: Lato;
-}
-.maindiv{
-  border: 1px solid ;
-  display:flex ;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
+
 .header{
-  background-color: cornflowerblue;
+  background-color: var(--blue);
   margin: auto;
   padding: 20px;
-  color:#FFF
+  color:var(--white)
 }

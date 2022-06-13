@@ -1,28 +1,18 @@
-.maindiv {
-  display: flex;
-  flex-direction: row;
-}
-.mainp {
-  float: left;
-  width: 25%;
-  padding: 5px;
-  border: 1px solid;
-  height: 100px;
-}
+
 * {
   box-sizing: border-box;
 }
 .row {
   display: flex;
   flex-direction: row;
-  flex: 33.33%;
+  flex: 25%;
   flex-wrap: wrap;
 }
 .column {
   flex: 25%;
   padding: 5px;
   border: 1px solid;
-  margin: 10px;
+  margin:20px
 }
 .childdiv {
   display: flex;
@@ -32,7 +22,7 @@
   align-items: center;
 }
 .column:hover {
-  background-color: cornflowerblue;
-  color: black;
+  background-color: var(--blue);
+  color: var(--white);
 }
 

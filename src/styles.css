@@ -1,9 +1,14 @@
+:root {
+  --blue: rgb(33, 60, 114);
+  --white: #ffffff;
+}
 button {
   border-radius: 50px;
   border: 0;
-  background-color: cornflowerblue;
+  background-color: var(--blue);
   padding: 10px;
   text-align: center;
+  color:var(--white)
 }
 h6 {
   padding-top: 10px;

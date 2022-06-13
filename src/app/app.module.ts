@@ -11,7 +11,9 @@ import { UsersdetailsComponent } from './usersdetails/usersdetails.component';
 import { RouterModule } from '@angular/router';
 import { StoreModule} from '@ngrx/store'
 import { usersReducer } from './store/users.reducers';
-import { DeleteComponenttsComponent } from './deleteUser/delete-componentts/delete-componentts.component';
+import { DeleteComponent } from './delete-components/delete-component';
+import { UpdateUserComponent } from './update-user/update-user.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -24,7 +26,7 @@ import { DeleteComponenttsComponent } from './deleteUser/delete-componentts/dele
       {}
     ),
   ],
-  declarations: [AppComponent, AddusersComponent, UsersdetailsComponent,DeleteComponenttsComponent],
+  declarations: [AppComponent, AddusersComponent, UsersdetailsComponent,DeleteComponent,UpdateUserComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
