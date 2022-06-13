@@ -1,9 +1,10 @@
 <form [formGroup]='fg'>
+  <div style='padding:20px'>
   <label>Title</label>
-  <input formControlName='title'>
-  <label>Body</label>
-  <input formControlName='body'>
-
+  <input formControlName='title'><br/><br/>
+  <label for=txtarea>Body</label>
+  <textarea id='txtarea' formControlName='body'></textarea>
+  </div>
 </form>
-<button>Update</button>
-<button>Cancel</button>
+<button (click)='updateuser()'>Update</button>
+<button (click)='cancel()'>Cancel</button>

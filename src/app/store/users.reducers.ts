@@ -43,7 +43,7 @@ on(selecteUserSuccessMsg,(state,{id})=>
   {
     const cloneusers:IUsers[]=cloneDeep(state.allUsers);
     const selecteduser=cloneusers.filter(x=>x.id==id)[0];
-    console.log(selecteduser);
+
     return {
       ...state,
       selecteduser
@@ -67,11 +67,12 @@ on(selecteUserSuccessMsg,(state,{id})=>
   }),
   on(updateUserSuccessMsg,(state,{user})=>{
     const tempusers:IUsers[]=cloneDeep(state.allUsers);
-    const index=tempusers.findIndex(x=>x.id=user.id);
+    
+    const index=tempusers.findIndex(x=>x.id==user.id);
     tempusers.splice(index,1,user);
 return {
   ...state,
-  tempusers
+  allUsers:tempusers
 }
   })
 

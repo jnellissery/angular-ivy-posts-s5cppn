@@ -24,6 +24,9 @@ selectuser:IUsers ;
   back(){
       this.router.navigate(['home'])
   }
+  update(){
+    this.router.navigate(['updateuser'])
+  }
   Delete(userid:string){
 
     this.store.dispatch(deleteUserSuccessMsg({id:userid}));
